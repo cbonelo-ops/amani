@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Session | Amani Yangu</title>
+<meta name="description" content="Book a session with Amani Yangu — in person or online. Receive banking details by email to confirm your appointment.">
+<meta property="og:title" content="Book a Session | Amani Yangu">
+<meta property="og:description" content="Book a session with Amani Yangu — in person or online. Receive banking details by email to confirm your appointment.">
+<meta property="og:image" content="images/logo-black.png">
+<link rel="icon" type="image/png" href="images/icon-sun.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FAF7F0}
+a{color:#111111}a:hover{color:#000000}
+input:focus,select:focus,textarea:focus{outline:3px solid #111111;outline-offset:2px}
+summary{cursor:pointer}
+</style>
+<style>[hidden]{display:none!important} img{max-width:100%} html{scroll-behavior:smooth}</style>
+</head>
+<body>
+<div style="font-family: Barlow, system-ui, sans-serif; color: #111111; background: #FAF7F0; font-size: 18px; line-height: 1.6">
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #E7E1D3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; text-decoration: none"><img src="images/logo-black.png" alt="Amani Yangu — For your peace &amp; well being" style="height: 56px; width: auto; display: block"></a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 30px; font-weight: 600; font-size: 17px">
+<a href="index.html" style="color: #111111; text-decoration: none; padding: 10px 0">Home</a>
+<a href="about.html" style="color: #111111; text-decoration: none; padding: 10px 0">About Us</a>
+<a href="services.html" style="color: #111111; text-decoration: none; padding: 10px 0">Services</a>
+<a href="bookings.html" style="color: #111111; text-decoration: none; padding: 10px 0; border-bottom: 3px solid #FFCB04">Bookings</a>
+<a href="bookings.html" style="background: #111111; color: #FFFFFF; text-decoration: none; padding: 12px 24px; border-radius: 999px; font-weight: 600">Book a session</a>
+</nav>
+</div>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 56px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 16px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase"><span style="width: 28px; height: 4px; background: #FFCB04; border-radius: 2px"></span>Bookings</p>
+<h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(2.8rem, 5.6vw, 4.6rem); line-height: 1.02">Book your session</h1>
+<p style="margin: 20px 0 0; max-width: 620px; font-size: 21px; color: #57534E">Taking the first step can feel big. Share a few details below and we’ll be in touch to confirm your appointment — in person or online.</p>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; position: relative">
+<img src="images/icon-sun.png" alt="" aria-hidden="true" style="position: absolute; top: -34px; right: -20px; width: 100px; height: 100px; object-fit: contain; z-index: 1">
+<img src="images/bookings.jpg" alt="Two people sharing coffee across a table" style="display: block; width: 100%; height: 320px; object-fit: cover; border-radius: 26px">
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+
+<div style="flex: 999 1 560px; min-width: 0; background: #FFFFFF; border: 1px solid #E7E1D3; border-radius: 28px; padding: 40px">
+<div id="booking-thanks" hidden>
+<div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start; padding: 24px 0">
+<span style="width: 64px; height: 64px; border-radius: 50%; background: #FFCB04; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-size: 38px; font-weight: 700; line-height: 1.1">Thank you — your request has been received.</h2>
+<p style="margin: 0; color: #57534E; max-width: 34em">Please check your inbox: you’ll receive an email with our banking details. Once payment is made, your appointment is confirmed. We look forward to meeting you.</p>
+<button type="button" id="booking-reset" style="margin-top: 8px; background: transparent; color: #111111; border: 2px solid #111111; padding: 12px 24px; border-radius: 999px; font: inherit; font-weight: 700; cursor: pointer">Make another booking</button>
+</div>
+</div>
+<div id="booking-form-wrap">
+<form id="booking-form" style="display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-size: 34px; font-weight: 700">Your details</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-name" style="font-weight: 700; font-size: 16px">Full name</label>
+<input id="bk-name" type="text" autocomplete="name" placeholder="Your name" style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-email" style="font-weight: 700; font-size: 16px">Email address</label>
+<input id="bk-email" type="email" autocomplete="email" placeholder="you@example.com" style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-phone" style="font-weight: 700; font-size: 16px">Phone / WhatsApp</label>
+<input id="bk-phone" type="tel" autocomplete="tel" placeholder="+27" style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-service" style="font-weight: 700; font-size: 16px">Service</label>
+<select id="bk-service" style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111">
+<option>Coffee with Nox</option>
+<option>Counselling</option>
+<option>Coaching</option>
+<option>Individual Coaching</option>
+<option>Couple Coaching</option>
+<option>Not sure yet</option>
+</select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-date" style="font-weight: 700; font-size: 16px">Preferred date</label>
+<input id="bk-date" type="date" style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111">
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-time" style="font-weight: 700; font-size: 16px">Preferred time</label>
+<select id="bk-time" style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111">
+<option>Morning</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+</div>
+</div>
+<fieldset style="border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="font-weight: 700; font-size: 16px; padding: 0; margin-bottom: 10px">Session format</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<label style="display: flex; align-items: center; gap: 10px; border: 1px solid #A39D90; border-radius: 12px; padding: 12px 18px; cursor: pointer; min-height: 24px"><input type="radio" name="bk-format" value="in-person" checked style="width: 18px; height: 18px; accent-color: #111111">In person</label>
+<label style="display: flex; align-items: center; gap: 10px; border: 1px solid #A39D90; border-radius: 12px; padding: 12px 18px; cursor: pointer; min-height: 24px"><input type="radio" name="bk-format" value="online" style="width: 18px; height: 18px; accent-color: #111111">Online</label>
+</div>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="bk-msg" style="font-weight: 700; font-size: 16px">Anything you’d like us to know? <span style="font-weight: 400; color: #57534E">(optional)</span></label>
+<textarea id="bk-msg" rows="5" placeholder="Share as much or as little as you’re comfortable with." style="width: 100%; box-sizing: border-box; padding: 14px 16px; border: 1px solid #A39D90; border-radius: 12px; font: inherit; background: #FFFFFF; color: #111111; resize: vertical"></textarea>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px">
+<button type="submit" style="background: #FFCB04; color: #111111; border: 0; padding: 16px 34px; border-radius: 999px; font: inherit; font-weight: 700; cursor: pointer">Request my booking</button>
+<p style="margin: 0; font-size: 16px; color: #57534E">You’ll receive banking details by email to confirm.</p>
+</div>
+</form>
+</div>
+</div>
+
+<aside style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="background: #111111; color: #FFFFFF; border-radius: 24px; padding: 32px">
+<h2 style="margin: 0 0 20px; font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 700">How booking works</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px">
+<li style="display: flex; gap: 14px"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #FFCB04; color: #111111; font-weight: 700; display: flex; align-items: center; justify-content: center">1</span><span>Send your booking request using the form.</span></li>
+<li style="display: flex; gap: 14px"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #FFCB04; color: #111111; font-weight: 700; display: flex; align-items: center; justify-content: center">2</span><span>Receive an email with our banking details.</span></li>
+<li style="display: flex; gap: 14px"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #FFCB04; color: #111111; font-weight: 700; display: flex; align-items: center; justify-content: center">3</span><span>Pay before your appointment to confirm your slot.</span></li>
+<li style="display: flex; gap: 14px"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #FFCB04; color: #111111; font-weight: 700; display: flex; align-items: center; justify-content: center">4</span><span>Meet with Nox — in person or online.</span></li>
+</ol>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E7E1D3; border-radius: 24px; padding: 32px">
+<h2 style="margin: 0 0 16px; font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 700">Session fees</h2>
+<dl style="margin: 0; display: flex; flex-direction: column">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #E7E1D3"><dt style="font-weight: 700">Coffee with Nox</dt><dd style="margin: 0; color: #57534E">[DURATION] · R[PRICE]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #E7E1D3"><dt style="font-weight: 700">Counselling</dt><dd style="margin: 0; color: #57534E">[DURATION] · R[PRICE]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #E7E1D3"><dt style="font-weight: 700">Coaching</dt><dd style="margin: 0; color: #57534E">[DURATION] · R[PRICE]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #E7E1D3"><dt style="font-weight: 700">Individual Coaching</dt><dd style="margin: 0; color: #57534E">[DURATION] · R[PRICE]</dd></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0"><dt style="font-weight: 700">Couple Coaching</dt><dd style="margin: 0; color: #57534E">[DURATION] · R[PRICE]</dd></div>
+</dl>
+</div>
+<div style="background: #FFCB04; border-radius: 24px; padding: 28px 32px; display: flex; flex-direction: column; gap: 10px; position: relative; overflow: hidden">
+<img src="images/icon-sun.png" alt="" aria-hidden="true" style="position: absolute; right: -40px; bottom: -40px; width: 160px; height: 160px; object-fit: contain; opacity: 0.35">
+<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-size: 28px; font-weight: 700; line-height: 1.1; position: relative">Not sure which service to choose?</h2>
+<p style="margin: 0; color: #111111; position: relative">Start with Coffee with Nox — a gentle conversation that helps you find the right next step.</p>
+<a href="services.html#coffee" style="font-weight: 700; text-decoration: none; color: #111111; position: relative">About Coffee with Nox →</a>
+</div>
+</aside>
+</section>
+
+<section style="background: #FFFFFF">
+<div style="max-width: 860px; margin: 0 auto; padding: 96px 24px">
+<p style="margin: 0 0 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase"><span style="width: 28px; height: 4px; background: #FFCB04; border-radius: 2px"></span>Good to know</p>
+<h2 style="margin: 0 0 32px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(2.3rem, 4vw, 3.2rem); line-height: 1.05">Frequently asked questions</h2>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<details open style="background: #FAF7F0; border: 1px solid #E7E1D3; border-radius: 18px; padding: 20px 24px">
+<summary style="font-weight: 700; font-size: 19px">Do you offer online sessions?</summary>
+<p style="margin: 12px 0 0; color: #57534E">Yes. Simply choose “Online” when you book, and we’ll send you everything you need to join.</p>
+</details>
+<details style="background: #FAF7F0; border: 1px solid #E7E1D3; border-radius: 18px; padding: 20px 24px">
+<summary style="font-weight: 700; font-size: 19px">How do I pay for my session?</summary>
+<p style="margin: 12px 0 0; color: #57534E">After you book, you’ll receive an email with our banking details. Please pay into the account before your appointment to confirm your booking.</p>
+</details>
+<details style="background: #FAF7F0; border: 1px solid #E7E1D3; border-radius: 18px; padding: 20px 24px">
+<summary style="font-weight: 700; font-size: 19px">Can couples book together?</summary>
+<p style="margin: 12px 0 0; color: #57534E">Absolutely. Choose Couple Coaching and let us know in the message box if you have any preferences for your first session.</p>
+</details>
+<details style="background: #FAF7F0; border: 1px solid #E7E1D3; border-radius: 18px; padding: 20px 24px">
+<summary style="font-weight: 700; font-size: 19px">What if I need to reschedule?</summary>
+<p style="margin: 12px 0 0; color: #57534E">[RESCHEDULING &amp; CANCELLATION POLICY]</p>
+</details>
+</div>
+</div>
+</section>
+
+<footer style="background: #000000; color: #F2EFE8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<img src="images/logo-white.png" alt="Amani Yangu — For your peace &amp; well being" style="width: 200px; height: auto; display: block">
+<p style="margin: 0; color: #A8A29A; font-size: 16px">Counselling and coaching for your peace and wellbeing. Established 2023.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFCB04">Explore</h3>
+<a href="index.html" style="color: #F2EFE8; text-decoration: none">Home</a>
+<a href="about.html" style="color: #F2EFE8; text-decoration: none">About Us</a>
+<a href="services.html" style="color: #F2EFE8; text-decoration: none">Services</a>
+<a href="bookings.html" style="color: #F2EFE8; text-decoration: none">Bookings</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFCB04">Get in touch</h3>
+<span>[EMAIL ADDRESS]</span>
+<span>[PHONE / WHATSAPP]</span>
+<span>[CITY / AREA]</span>
+<span style="color: #A8A29A">Online sessions available</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; font-size: 16px">
+<h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFCB04">Follow</h3>
+<a href="#" style="color: #F2EFE8; text-decoration: none">Facebook [PAGE LINK]</a>
+<a href="#" style="color: #F2EFE8; text-decoration: none">Instagram [IF ANY]</a>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #333333; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 15px; color: #A8A29A">
+<span>© 2026 Amani Yangu. All rights reserved.</span>
+<span>Website by SiBA Productions</span>
+</div>
+</footer>
+
+</div>
+<script>
+// Mockup behaviour: shows the thank-you message. Connect to a form service (e.g. WPForms, Formspree) or email when going live.
+(function(){var f=document.getElementById('booking-form'),w=document.getElementById('booking-form-wrap'),t=document.getElementById('booking-thanks'),r=document.getElementById('booking-reset');
+f.addEventListener('submit',function(e){e.preventDefault();w.hidden=true;t.hidden=false;t.scrollIntoView({behavior:'smooth',block:'center'});});
+r.addEventListener('click',function(){f.reset();t.hidden=true;w.hidden=false;});})();
+</script>
+</body>
+</html>
