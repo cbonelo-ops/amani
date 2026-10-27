@@ -1,0 +1,38 @@
+/* Amani Yangu — load & scroll animations */
+@keyframes ay-rise { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: none; } }
+@keyframes ay-drop { from { opacity: 0; transform: translateY(-100%); } to { opacity: 1; transform: none; } }
+@keyframes ay-zoom { from { transform: scale(1.12); } to { transform: scale(1); } }
+@keyframes ay-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ay-spin { to { rotate: 360deg; } }
+
+html, body { overflow-x: clip; }
+
+/* Page load */
+.js-anim .ay-header { animation: ay-drop .7s cubic-bezier(.2,.7,.3,1) both; }
+.js-anim .ay-hero { animation: ay-rise .9s cubic-bezier(.2,.7,.3,1) both; animation-delay: var(--d, 0ms); }
+.js-anim .ay-hero-bg { animation: ay-zoom 2.6s cubic-bezier(.2,.7,.3,1) both, ay-fade 1.2s ease both; }
+
+/* Scroll reveal */
+.js-anim .ay-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .8s cubic-bezier(.2,.65,.3,1), transform .8s cubic-bezier(.2,.65,.3,1), box-shadow .35s ease;
+  transition-delay: var(--d, 0ms);
+}
+.js-anim img.ay-reveal { transform: translateY(20px) scale(.97); }
+.js-anim .ay-reveal.ay-in { opacity: 1; transform: none; }
+
+/* Brand sun slowly turns */
+img.ay-sun { animation: ay-spin 60s linear infinite; }
+
+/* Hover polish */
+article, a[style*="border-radius: 999px"], button { transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease; }
+article:hover, .js-anim article.ay-reveal.ay-in:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,.10); transition-delay: 0ms; }
+a[style*="border-radius: 999px"]:hover, button:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0,0,0,.16); }
+a[style*="border-radius: 999px"]:active, button:active { transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-anim .ay-header, .js-anim .ay-hero, .js-anim .ay-hero-bg, img.ay-sun { animation: none !important; }
+  .js-anim .ay-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  article:hover, a[style*="border-radius: 999px"]:hover, button:hover { transform: none !important; }
+}
