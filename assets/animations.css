@@ -36,3 +36,10 @@ a[style*="border-radius: 999px"]:active, button:active { transform: translateY(0
   .js-anim .ay-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   article:hover, a[style*="border-radius: 999px"]:hover, button:hover { transform: none !important; }
 }
+
+/* WhatsApp button: icon only on phones so it never covers page buttons */
+@media (max-width: 640px) {
+  .ay-wa { padding: 8px !important; right: 14px !important; bottom: 14px !important; }
+  .ay-wa .ay-wa-t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .ay-wa > span:first-child { width: 44px !important; height: 44px !important; }
+}
